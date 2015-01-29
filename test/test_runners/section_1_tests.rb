@@ -1,6 +1,6 @@
-require_relative './test'
-require_relative './../exercises/section_1'
-require_relative './../procs/section_1_procs'
+require_relative './../test_helpers/test'
+require_relative './../../lib/section_1'
+require_relative './../test_helpers/section_1_procs'
 
 class Section_1_Tests
 	def initialize
