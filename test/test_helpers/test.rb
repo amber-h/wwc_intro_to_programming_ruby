@@ -1,3 +1,4 @@
+require'colorize'
 class Test
 
 	attr_reader :is_passing
@@ -20,12 +21,15 @@ class Test
 	end
 
 	def print_error(actual_value)
+		print "#{@name}: "
+		print "failed \n".red
 		puts "\nThe method #{@name} didn't return the correct data type."
 		puts "\tExpected: #{@expected_value}"
-		puts "\tActual: #{@actual_value.class}"
+		puts "\tActual: #{@actual_value.class}\n"
 	end
 
 	def print_success
-		puts "#{@name}: passed"
+		print "#{@name}: "
+		print "passed \n".green
 	end
 end
