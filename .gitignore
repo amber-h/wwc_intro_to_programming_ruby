@@ -1,3 +1,4 @@
 *.swp
 .DS-Store
 vendor/ruby
+Gemfile.lock
